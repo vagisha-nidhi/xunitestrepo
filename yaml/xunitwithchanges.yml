@@ -14,8 +14,7 @@ variables:
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
-  pool:
-    vmImage: 'windows-latest'
+  pool: AgentVanidhiPTR
   steps:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
