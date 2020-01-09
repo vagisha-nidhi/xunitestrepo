@@ -1,0 +1,24 @@
+
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+jobs:
+- job: RunTest1
+  displayName: 'Run Tests'
+  pool: Default
+  steps:
+  - task: VisualStudioTestPlatformInstaller@1
+    displayName: 'Visual Studio Test Platform Installer'
+    inputs:
+      versionSelector: 'latestPreRelease'
+  - task: VSTest@2
+    inputs:
+      testSelector: 'testAssemblies'
+      testAssemblyVer2: '**/*XUnitDataDrivenTestsProject*.dll'
+      searchFolder: '$(System.DefaultWorkingDirectory)\XunitDataDrivenTestsProject\bin\Debug\net472'
+      vsTestVersion: 'toolsInstaller'
