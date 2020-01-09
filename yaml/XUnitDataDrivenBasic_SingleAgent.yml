@@ -10,20 +10,12 @@ trigger:
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
-  pool:
-    vmImage: 'windows-latest'
+  pool: AgentVanidhiPTR
   steps:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
       versionSelector: 'latestPreRelease'
-  - task: CmdLine@2
-    inputs:
-      script: |
-        reg DELETE "HKLM\Software\Microsoft\StrongName\Verification" /f	
-        reg ADD "HKLM\Software\Microsoft\StrongName\Verification\*,*" /f	
-        reg DELETE "HKLM\Software\Wow6432Node\Microsoft\StrongName\Verification" /f	
-        reg ADD "HKLM\Software\Wow6432Node\Microsoft\StrongName\Verification\*,*" /f
   - task: VsTestV2WithXUnit@2
     inputs:
       testSelector: 'testAssemblies'
