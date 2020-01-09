@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3cc565c4-5438-4318-98d0-653c850b77ac" name="vanidhi@VANIDHI-DESK 2020-01-09 17:00:34" runUser="FAREAST\vanidhi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2020-01-09T17:00:34.9228659+05:30" queuing="2020-01-09T17:00:34.9228659+05:30" start="2020-01-09T17:00:33.7588508+05:30" finish="2020-01-09T17:00:34.9478651+05:30" />
+  <TestSettings name="default" id="2e28b599-8e0b-4a53-85c0-f507c2848958">
+    <Deployment runDeploymentRoot="vanidhi_VANIDHI-DESK_2020-01-09_17_00_34" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f32fdbe0-3912-42c3-8ed1-7308c606600f" testId="0a7a18d0-86a5-f894-55fe-e9c5d484e4f7" testName="XUnitDataDrivenTestsProject.UnitTest1.Test1(data: 1)" computerName="VANIDHI-DESK" duration="00:00:00.0490000" startTime="2020-01-09T17:00:34.6018824+05:30" endTime="2020-01-09T17:00:34.6018824+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f32fdbe0-3912-42c3-8ed1-7308c606600f" />
+    <UnitTestResult executionId="12b7cf9d-c269-425a-a327-69855d1ec90b" testId="6022fe7d-b0c5-5128-9253-0ac6967218af" testName="XUnitDataDrivenTestsProject.UnitTest1.Test1(data: 2)" computerName="VANIDHI-DESK" duration="00:00:00.0030000" startTime="2020-01-09T17:00:34.6918625+05:30" endTime="2020-01-09T17:00:34.6918625+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12b7cf9d-c269-425a-a327-69855d1ec90b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.True() Failure&#xD;
+Expected: True&#xD;
+Actual:   False</Message>
+          <StackTrace>   at XUnitDataDrivenTestsProject.UnitTest1.Test1(Int32 data) in E:\CodeBase\xunitestrepo\XUnitDataDrivenTestsProjectFailingTests\UnitTest1.cs:line 13</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="XUnitDataDrivenTestsProject.UnitTest1.Test1(data: 1)" storage="e:\codebase\vanidhiagentvanidhiptr\_work\3\s\xunitdatadriventestsprojectfailingtests\bin\debug\net472\xunitdatadriventestsprojectfailingtests.dll" priority="0" id="0a7a18d0-86a5-f894-55fe-e9c5d484e4f7">
+      <Execution id="f32fdbe0-3912-42c3-8ed1-7308c606600f" />
+      <TestMethod codeBase="E:\CodeBase\vanidhiagentvanidhiptr\_work\3\s\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472\XUnitDataDrivenTestsProjectFailingTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/net" className="XUnitDataDrivenTestsProject.UnitTest1" name="Test1" />
+    </UnitTest>
+    <UnitTest name="XUnitDataDrivenTestsProject.UnitTest1.Test1(data: 2)" storage="e:\codebase\vanidhiagentvanidhiptr\_work\3\s\xunitdatadriventestsprojectfailingtests\bin\debug\net472\xunitdatadriventestsprojectfailingtests.dll" priority="0" id="6022fe7d-b0c5-5128-9253-0ac6967218af">
+      <Execution id="12b7cf9d-c269-425a-a327-69855d1ec90b" />
+      <TestMethod codeBase="E:\CodeBase\vanidhiagentvanidhiptr\_work\3\s\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472\XUnitDataDrivenTestsProjectFailingTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/net" className="XUnitDataDrivenTestsProject.UnitTest1" name="Test1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="0a7a18d0-86a5-f894-55fe-e9c5d484e4f7" executionId="f32fdbe0-3912-42c3-8ed1-7308c606600f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6022fe7d-b0c5-5128-9253-0ac6967218af" executionId="12b7cf9d-c269-425a-a327-69855d1ec90b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.0 (32-bit Desktop .NET 4.0.30319.42000)&#xD;
+[xUnit.net 00:00:00.41]   Discovering: XUnitDataDrivenTestsProjectFailingTests&#xD;
+[xUnit.net 00:00:00.55]   Discovered:  XUnitDataDrivenTestsProjectFailingTests&#xD;
+[xUnit.net 00:00:00.56]   Starting:    XUnitDataDrivenTestsProjectFailingTests&#xD;
+[xUnit.net 00:00:00.80]       Assert.True() Failure&#xD;
+[xUnit.net 00:00:00.80]       Expected: True&#xD;
+[xUnit.net 00:00:00.80]       Actual:   False&#xD;
+[xUnit.net 00:00:00.80]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.81]         E:\CodeBase\xunitestrepo\XUnitDataDrivenTestsProjectFailingTests\UnitTest1.cs(13,0): at XUnitDataDrivenTestsProject.UnitTest1.Test1(Int32 data)&#xD;
+[xUnit.net 00:00:00.81]   Finished:    XUnitDataDrivenTestsProjectFailingTests&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="VANIDHI-DESK" outcome="Error" timestamp="2020-01-09T17:00:34.6878633+05:30">
+        <Text>[xUnit.net 00:00:00.80]     XUnitDataDrivenTestsProject.UnitTest1.Test1(data: 2) [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

@@ -10,10 +10,10 @@ trigger:
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
-  pool: AgentVanidhiPTR
+  pool: Default
   steps:
   - task: PublishTestResults@2
     inputs:
       testResultsFormat: 'VSTest' # Options: JUnit, NUnit, VSTest, xUnit, cTest
-      testResultsFiles: '**/xunitdatadriven*.trx' 
+      testResultsFiles: '**/xunitdatadrivenfailed*.trx' 
       searchFolder: '$(System.DefaultWorkingDirectory)/TrxFiles' # Optional
