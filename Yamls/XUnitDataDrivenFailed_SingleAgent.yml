@@ -20,5 +20,5 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*XUnitDataDrivenTestsProjectFailingTests*.dll'
-      searchFolder: '(System.DefaultWorkingDirectory)\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472'
+      searchFolder: '$(System.DefaultWorkingDirectory)\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472'
       vsTestVersion: 'toolsInstaller'
