@@ -4,6 +4,7 @@ namespace XUnitDataDrivenTestsProject
 {
     public class UnitTest1
     {
+        [Theory]
         [Trait("Priority", "0")]
         [InlineData(1)]
         [InlineData(2)]
