@@ -18,6 +18,13 @@ jobs:
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
       versionSelector: 'latestPreRelease'
+  - task: CmdLine@2
+    inputs:
+      script: |
+        reg DELETE "HKLM\Software\Microsoft\StrongName\Verification" /f
+        reg ADD "HKLM\Software\Microsoft\StrongName\Verification\*,*" /f
+        reg DELETE "HKLM\Software\Wow6432Node\Microsoft\StrongName\Verification" /f
+        reg ADD "HKLM\Software\Wow6432Node\Microsoft\StrongName\Verification\*,*" /f
   - task: VSTestV2WithXUnit@2
     inputs:
       testSelector: 'testAssemblies'
