@@ -18,7 +18,7 @@ jobs:
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
       versionSelector: 'latestPreRelease'
-  - task: VSTest@2
+  - task: VSTestV2WithXUnit@2
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*XUnitDataDrivenTestsProject*.dll'
